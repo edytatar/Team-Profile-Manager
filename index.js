@@ -1,6 +1,9 @@
-// Node modules
+// Importing node modules
 var inquirer = require('inquirer');
 const fs = require('fs');
+
+// Importing generateHTML
+const generateHTML = require('./src/generateHTML');
 
 // Team Profiles
 const Employee = require('./lib/Employee')
@@ -199,24 +202,24 @@ const writeFile = data => {
         if (err) {
             console.log(err);
             return;
-        // When the profile has succesfully been created
+            // When the profile has succesfully been created
         } else {
             console.log('Your team profile has been successfully created. See index.html.')
         }
     })
-}; 
+};
 
 
 
 // Invoking application
 addManager()
-  .then(addTeamMembers)
-  .then(teamArr => {
-    return generateHTML(teamArr);
-  })
-  .then(pageHTML => {
-    return writeFile(pageHTML);
-  })
-  .catch(err => {
- console.log(err);
-  });
+    .then(addTeamMembers)
+    .then(teamArr => {
+        return generateHTML(teamArr);
+    })
+    .then(pageHTML => {
+        return writeFile(pageHTML);
+    })
+    .catch(err => {
+        console.log(err);
+    });
