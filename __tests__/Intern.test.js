@@ -1,23 +1,21 @@
 // Importing Intern constructor 
 const Intern = require('../lib/Intern');
 
-// Test: creating Intern object
-test('creates an Intern object', () => {
-    const intern = new Intern('Edya', 13, 'edytatar@gmail.com', 'Northwestern University');
+const intern = new Intern("Edyta", 13, "edytatar@gmail.com", "Northwestern");
 
-    expect(intern.school).toEqual(expect.any(String));
+// Test: creating Intern object
+describe('Intern Class', () => {
+    it('returns intern properties', () => {
+        expect(intern.name).toBe("Edyta");
+        expect(intern.id).toBe(13);
+        expect(intern.email).toBe("edytatar@gmail.com");
+        expect(intern.school).toBe("Northwestern University");
+    });
 });
 
 // Test: gets intern's school name from getSchool()
-test('gets intern school', () => {
-    const intern = new Intern('Nicole', 90, 'nicole.elisaw@gmail', 'Northwestern University');
-
-    expect(intern.getSchool()).toEqual(expect.stringContaining(intern.school.toString()));
-});
-
-// Test: gets intern's role from getRole()
-test('gets role of employee', () => {
-    const intern = new Intern('Nicole', 90, 'nicole.elisaw@gmail.com', 'Northwestern University');
-
-    expect(intern.getRole()).toEqual("Intern");
+describe('Intern getSchool', () => {
+    it('returns school name', () => {
+        expect(intern.getSchool()).toBe(intern.school);
+    });
 });

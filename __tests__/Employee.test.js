@@ -1,32 +1,34 @@
 // Importing Employee constructor
 const Employee = require('../lib/Employee');
 
-// Test: creating employee object
-test('creates an employee object', () => {
-    const employee = new Employee('Edya', 13, 'edytatar@gmail.com');
+const employee = new Employee("Edyta", 13, "edytatar@gmail.com");
 
-    expect(employee.name).toEqual(expect.any(String));
-    expect(employee.id).toEqual(expect.any(Number));
-    expect(employee.email).toEqual(expect.any(String));
+// Test: creating employee object
+describe('Employee Class', () => {
+    it('returns employee properties', () => {
+        expect(employee.name).tobe("Edyta");
+        expect(employee.id).toEqual(13);
+        expect(employee.email).toEqual("employee.email");
+    });
 });
 
 // Test: gets employee name from getName() 
-test('gets employee name', () => {
-    const employee = new Employee('Edya', 13, 'edytatar@gmail.com');
-
-    expect(employee.getName()).toEqual(expect.any(String));
+describe('Employee getName', () => {
+    it('returns name', () => {
+        expect(employee.getName()).toBe(employee.name);
+    });
 });
 
 // Test: gets employee id from getId() 
-test('gets employee ID', () => {
-    const employee = new Employee('Edya', 13, 'edytatar@gmail.com');
-
-    expect(employee.getId()).toEqual(expect.any(Number));
+describe('Employee getId', () => {
+    it('returns id number', () => {
+        expect(employee.getId()).toBe(employee.name);
+    });
 });
 
-// Test: gets employee email from email() 
-test('gets employee email', () => {
-    const employee = new Employee('Edya', 13, 'edytatar@gmail.com');
-
-    expect(employee.getEmail()).toEqual(expect.stringContaining(employee.email.toString()));
+// Test: gets employee email from email()
+describe('Employee getEmail', () => {
+    it('returns email', () => {
+        expect(employee.getEmail()).toBe(employee.email);
+    });
 });

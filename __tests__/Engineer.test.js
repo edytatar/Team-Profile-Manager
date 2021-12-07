@@ -1,24 +1,21 @@
-
 // Importing Engineer constructor
 const Engineer = require('../lib/Engineer');
 
-// Test: creating Engineer object 
-test('creates an Engineer object', () => {
-    const engineer = new Engineer('Edya', 13, 'edytatar@gmail.com', 'edytatar');
+const engineer = new Engineer("Edyta", 13, "edytatar@gmail.com", "edytatar");
 
-    expect(engineer.github).toEqual(expect.any(String));
+// Test: creating Engineer object
+describe('Engineer Class', () => {
+    it('returns engineer properties', () => {
+        expect(engineer.name).toBe("Edyta");
+        expect(engineer.id).toBe(13);
+        expect(engineer.email).toBe("edytatar@gmail.com");
+        expect(engineer.github).toBe("edytatar");
+    });
 });
 
-// Test: gets engineer username from getGithub()
-test('gets engineer github value', () => {
-    const engineer = new Engineer('Edya', 13, 'edytatar@gmail.com', 'edytatar');
-
-    expect(engineer.getGithub()).toEqual(expect.stringContaining(engineer.github.toString()));
-});
-
-// Test: gets engineer role from getRole() 
-test('gets role of employee', () => {
-    const engineer = new Engineer('Edya', 13, 'edytatar@gmail.com', 'edytatar');
-
-    expect(engineer.getRole()).toEqual("Engineer");
+// Test: gets engineer's github username getGithub()
+describe('Engineer getGithub', () => {
+    it('returns github username', () => {
+        expect(engineer.getGithub()).toBe(engineer.github);
+    });
 });
