@@ -139,7 +139,7 @@ const addTeamMembers = () => {
         {
             type: 'input',
             name: 'github',
-            message: "What is the employee's github username.",
+            message: "What is the employee's github username?",
             when: (input) => input.role === "Engineer",
             validate: githubInput => {
                 if (githubInput) {
@@ -151,7 +151,7 @@ const addTeamMembers = () => {
         {
             type: 'input',
             name: 'school',
-            message: 'Please enter the where the intern goes to school',
+            message: 'Where does the intern go to school?',
             when: (input) => input.role === "Intern",
             validate: school => {
                 if (school) {
@@ -186,7 +186,7 @@ const addTeamMembers = () => {
             teamArr.push(employee);
 
             if (confirmAddEmployee) {
-                return addTeamMembers(teamArray);
+                return addTeamMembers(teamArr);
             } else {
                 return teamArr;
             }
