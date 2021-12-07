@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "jest",
-    "build-css": "tailwindcss build src/styles.css -o dist/styles.css"
+    "build-css": "postcss src/styles.css -o dist/styles.css"
   },
   "repository": {
     "type": "git",
@@ -24,6 +24,7 @@
   "dependencies": {
     "autoprefixer": "^10.4.0",
     "inquirer": "^8.2.0",
+    "postcss-cli": "^9.0.2",
     "tailwindcss": "^2.2.19"
   },
   "devDependencies": {
