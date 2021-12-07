@@ -13,9 +13,10 @@ describe('Engineer Class', () => {
     });
 });
 
-// Test: gets engineer's github username getGithub()
-describe('Engineer getGithub', () => {
-    it('returns github username', () => {
-        expect(engineer.getGithub()).toBe(engineer.github);
+
+// Test: gets engineer role from getRole()
+describe('Engineer getRole', () => {
+    it('returns role', () => {
+        expect(engineer.getRole()).toBe("Engineer");
     });
 });

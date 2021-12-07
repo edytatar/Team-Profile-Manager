@@ -13,9 +13,9 @@ describe('Manager Class', () => {
     });
 });
 
-// Test: gets manager's role from getRole()
-describe('Manager getOfficeNumber', () => {
-    it('returns manager office number', () => {
-        expect(manager.getOfficeNumber()).toBe(manager.officeNumber);
+// Test: gets manager role from getRole()
+describe('Manager getRole', () => {
+    it('returns role', () => {
+        expect(manager.getRole()).toBe("Manager");
     });
 });

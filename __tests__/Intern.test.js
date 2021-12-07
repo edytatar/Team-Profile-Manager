@@ -1,7 +1,7 @@
 // Importing Intern constructor 
 const Intern = require('../lib/Intern');
 
-const intern = new Intern("Edyta", 13, "edytatar@gmail.com", "Northwestern");
+const intern = new Intern("Edyta", 13, "edytatar@gmail.com", "Northwestern University");
 
 // Test: creating Intern object
 describe('Intern Class', () => {
@@ -13,9 +13,9 @@ describe('Intern Class', () => {
     });
 });
 
-// Test: gets intern's school name from getSchool()
-describe('Intern getSchool', () => {
-    it('returns school name', () => {
-        expect(intern.getSchool()).toBe(intern.school);
+// Test: gets intern role from getRole()
+describe('Inter getRole', () => {
+    it('returns role', () => {
+        expect(intern.getRole()).toBe("Intern");
     });
 });
