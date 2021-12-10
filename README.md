@@ -58,14 +58,14 @@
 
 &nbsp;
 
-  To see a video of the application, please visit [`here`](https://drive.google.com/file/d/1wtOrhjbLbjpXsmGd51G79-T9T087H2na/view?usp=sharing).
+  To see a video of the application, please visit [here](https://drive.google.com/file/d/1wtOrhjbLbjpXsmGd51G79-T9T087H2na/view?usp=sharing).
   
   Please visit the [`example-index.html`](https://github.com/edytatar/Team-Profile-Manager/blob/main/dist/example-index.html) file to see a dynamically generated page. 
 
 
   &nbsp;
   ## Tests:
-  Jest was used to create the [`employee`](https://github.com/edytatar/Team-Profile-Manager/blob/main/dist/example-index.html), [`manager`](https://github.com/edytatar/Team-Profile-Manager/blob/main/dist/example-index.html), [`engineer`](https://github.com/edytatar/Team-Profile-Manager/blob/main/dist/example-index.html), and [`intern`](https://github.com/edytatar/Team-Profile-Manager/blob/main/dist/example-index.html) tests.
+  Jest was used to create the [employee](https://github.com/edytatar/Team-Profile-Manager/blob/main/dist/example-index.html), [manager](https://github.com/edytatar/Team-Profile-Manager/blob/main/dist/example-index.html), [engineer](https://github.com/edytatar/Team-Profile-Manager/blob/main/dist/example-index.html), and [intern](https://github.com/edytatar/Team-Profile-Manager/blob/main/dist/example-index.html) tests.
 
   Each of the above tested that the respective employee object was formed and that the getRole function returned the correct role. The employee included a couple other tests. These tests were created to ensure getName, getId, and getEmail returned the correct answer. 
 
