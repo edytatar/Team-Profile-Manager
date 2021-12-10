@@ -118,7 +118,7 @@ describe('Employee getRole', () => {
 ```
 
 &nbsp;
-  ## Future Developments:
+  ## Future:
   In a future development, the Team Profile Manager:
   
   * Will accomodate more types of teams, not just engineering
