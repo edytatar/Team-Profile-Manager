@@ -78,7 +78,7 @@ const createEngineerCard = function (engineer) {
                         GitHub
                     </dt>
                     <dd class="mt-1 text-m text-gray-900 sm:mt-0 sm:col-span-2">
-                        <a href="https://github.com/${engineer.github}">${engineer.github}</a>
+                        <a href="https://github.com/${engineer.github}" target="_blank">${engineer.github}</a>
                     </dd>
                 </section>
             </dl>
