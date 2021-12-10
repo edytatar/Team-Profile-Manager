@@ -61,8 +61,7 @@
   To see a video of the application, please visit [`here`](https://drive.google.com/file/d/1wtOrhjbLbjpXsmGd51G79-T9T087H2na/view?usp=sharing).
   
   Please visit the [`example-index.html`](https://github.com/edytatar/Team-Profile-Manager/blob/main/dist/example-index.html) file to see a dynamically generated page. 
- 
----
+
 
   &nbsp;
   ## Tests:
