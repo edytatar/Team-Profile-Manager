@@ -14,7 +14,7 @@ describe('Intern Class', () => {
 });
 
 // Test: gets intern role from getRole()
-describe('Inter getRole', () => {
+describe('Intern getRole', () => {
     it('returns role', () => {
         expect(intern.getRole()).toBe("Intern");
     });
