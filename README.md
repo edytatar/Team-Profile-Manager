@@ -30,7 +30,7 @@
 
   &nbsp;
   ## Usage:
-  After following the above instructions for installation, the application will prompt the user with questions using the `Inquirer` package. 
+  After following the above instructions for installation, the application will prompt the user with questions using [Inquirer](https://www.npmjs.com/package/inquirer). 
 
 &nbsp;
 > The first question is about the manager.
@@ -41,8 +41,15 @@
 ![Adding team members](https://user-images.githubusercontent.com/87889660/145634014-d93ce655-14bb-4033-836b-d879bc703835.png)
 
 &nbsp;
-> After inputting a team member's information. The user may choose to add another. If they select yes, the application will loop through adding another member. 
+> After entering a team member's information, the user may choose to add another. If they select yes, the application will loop through adding another member. 
 ![Adding additional team members](https://user-images.githubusercontent.com/87889660/145634333-e8ce4b52-deec-4bab-aa4f-b3aea7603a3a.png)
+
+&nbsp;
+> It is important to note that the application has validations to ensure only the appropriate data is collected.
+![Valid email](https://user-images.githubusercontent.com/87889660/145645037-71ccdf14-fec8-41e5-9143-d63f79165cd9.png)
+![Valid office number](https://user-images.githubusercontent.com/87889660/145645096-4a5e17c6-62aa-48db-96d1-3c3d1bea9308.png)
+![Valid id number](https://user-images.githubusercontent.com/87889660/145645225-069afdad-5783-4e70-9ee8-17c955e0e8d1.png)
+
 
 &nbsp;
 > When the user is finished adding team members, the application will generate an HTML page in the "dist" folder. 
